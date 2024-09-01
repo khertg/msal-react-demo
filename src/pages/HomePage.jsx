@@ -2,6 +2,9 @@ import { AuthenticatedTemplate, UnauthenticatedTemplate } from "@azure/msal-reac
 import React from "react";
 
 export default function HomePage() {
+
+  //@TODO: Call Azure Function
+  
   return <>
   <AuthenticatedTemplate>
     I am authenticated
