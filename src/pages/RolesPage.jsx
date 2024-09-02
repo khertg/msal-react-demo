@@ -1,15 +1,10 @@
-import {
-  AuthenticatedTemplate,
-  UnauthenticatedTemplate,
-} from "@azure/msal-react";
+import { AuthenticatedTemplate, UnauthenticatedTemplate } from "@azure/msal-react";
 import React from "react";
 
-export default function HomePage() {
-  //@TODO: Call Azure Function
-
+export default function RolesPage() {
   return (
     <>
-      <div>HomePage</div>
+      <div>RolesPage</div>
 
       <AuthenticatedTemplate>I am authenticated</AuthenticatedTemplate>
       <UnauthenticatedTemplate>NOT AUTHENTICATED</UnauthenticatedTemplate>
