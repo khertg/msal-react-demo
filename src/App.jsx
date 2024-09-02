@@ -30,24 +30,6 @@ function LoadingComponent({ error }) {
 }
 
 function Pages() {
-  const { instance, inProgress } = useMsal();
-  const authenticated = useIsAuthenticated();
-
-  useEffect(() => {
-    console.warn("authenticated ??", authenticated);
-    console.warn("inProgress ??", inProgress);
-
-    // if (!authenticated) {
-    //   console.warn("EXECUTED!!");
-    //   instance
-    //     .loginRedirect({
-    //       ...loginRequest,
-    //       prompt: "create",
-    //     })
-    //     .catch((error) => console.error(error));
-    // }
-  }, []);
-
   return (
     <MsalAuthenticationTemplate
       interactionType={InteractionType.Redirect}
